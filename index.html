@@ -1,392 +1,56 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <!-- Site made with Mobirise Website Builder v4.6.6, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.6.6, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo-122x122.png" type="image/x-icon">
-  <meta name="description" content="一年一度的由北京大学软件与微电子学院举办的全国计算机辅助翻译与技术传播大赛">
-  <title>全国计算机辅助翻译与技术传播大赛</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
-</head>
-<body>
-  <section class="menu cid-qN0876IaGP" once="menu" id="menu1-e">
+---
+title: 首页
+layout: page
+---
 
-    
+<ul class="listing">
+{% for post in paginator.posts %}
+  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+  {% if year != y %}
+    {% assign year = y %}
+    <li class="listing-seperator">{{ y }}</li>
+  {% endif %}
+  <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    {% if site.truncate %}
+    <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
+    {% endif%}
+  </li>
+{% endfor %}
+</ul>
 
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </button>
-        <div class="menu-logo">
-            <div class="navbar-brand">
-                
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-5" href="http://cattc-contest.com">CATTC大赛</a></span>
-            </div>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-            
-        </div>
-    </nav>
-</section>
+<div id="post-pagination" class="paginator">
 
-<section class="engine"><a href="https://mobirise.ws/d">best free web page software</a></section><section class="mbr-section article content1 cid-qN0fZGN7J1" id="content1-q">
-    
-     
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <a href="/"><前页</a>
+    {% else %}
+    <a href="/page{{paginator.previous_page}}">&lt;前页</a>
+    {% endif %}
+  {% else %}
+    <span class="previous disabled">&lt;前页</span>
+  {% endif %}
 
-    <div class="container">
-        <div class="media-container-row">
-            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"></div>
-        </div>
-    </div>
-</section>
+      {% if paginator.page == 1 %}
+      <span class="current-page">1</span>
+      {% else %}
+      <a href="/">1</a>
+      {% endif %}
 
-<section class="header1 cid-qN09179UMj" id="header1-i">
+    {% for count in (2..paginator.total_pages) %}
+      {% if count == paginator.page %}
+      <span class="current-page">{{count}}</span>
+      {% else %}
+      <a href="/page{{count}}">{{count}}</a>
+      {% endif %}
+    {% endfor %}
 
-    
+  {% if paginator.next_page %}
+    <a class="next" href="/page{{paginator.next_page}}">后页&gt;</a>
+  {% else %}
+    <span class="next disabled" >后页&gt;</span>
+  {% endif %}
+  (共{{ paginator.total_posts }}篇)
+</div>
 
-    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(0, 0, 0);">
-    </div>
-
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="mbr-white col-md-10">
-                <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">第七届计算机辅助翻译与技术传播大赛<br></h1>
-                
-                
-                <div class="mbr-section-btn align-center"><a class="btn btn-md btn-white-outline display-4" href="http://cattc-contest.com/fanyi"><span class="mbri-paper-plane mbr-iconfont mbr-iconfont-btn" style="font-size: 20px;"></span>报名参赛</a></div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-section content4 cid-qN2J37Ifu9" id="content4-z">
-
-    
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h2 class="align-center pb-3 mbr-fonts-style display-2">
-                    大赛简介</h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-7">
-                    计算机辅助翻译和技术传播大赛，是由北京大学技术传播系举办的，以推广本地化技术及技术传播理念为宗旨的语言服务类比赛。大赛充分利用北大技术传播系多年来累积的经验与资源，为有志于从事语言服务行业的在校学生和职场人士提供一个了解行业信息、互相交流的平台。各位选手在参与比赛的同时，也能学会更多本地化和技术传播的知识技术，更加深刻地理解语言服务行业，从而促进自身的发展。<br><br><strong>大赛面向对象</strong><br>
-                <div>不限国家，不限学校，不限专业&nbsp;</div><div>毕业两年内的小哥哥、小姐姐们也可以参加哦~&nbsp;</div><div>只要你有兴趣，我们在未名湖畔等你！</div></h3>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="features13 cid-qN2LsMNMAA" id="features13-16">
-
-    
-
-    
-    <div class="container">
-        <h2 class="mbr-section-title pb-3 mbr-fonts-style display-2">
-            往届回顾</h2>
-
-        <div class="media-container-row container">
-            <div class="card col-12 col-md-6 p-5 m-3 align-center col-lg-4">
-                <div class="card-img">
-                    <img src="assets/images/img-694-1200x800.jpg" alt="Mobirise" title="">
-                </div>
-                <h4 class="card-title py-2 mbr-fonts-style display-5"><br><br><a href="pictures.html">大赛图集</a><br></h4>
-                <p class="mbr-text mbr-fonts-style display-7"></p>
-            </div>
-            <div class="card col-12 col-md-6 p-5 m-3 align-center col-lg-4">
-                <div class="card-img">
-                    <img src="assets/images/jumbotron2.jpg" alt="Mobirise">
-                </div>
-                <h4 class="card-title py-2 mbr-fonts-style display-5"><br><br>视频花絮</h4>
-                <p class="mbr-text mbr-fonts-style display-7"><br><br></p>
-            </div>
-            <div class="card col-12 col-md-6 p-5 m-3 align-center col-lg-4">
-                <div class="card-img">
-                    <img src="assets/images/background5.jpg" alt="Mobirise">
-                </div>
-                <h4 class="card-title py-2 mbr-fonts-style display-5">
-                    <br><br>往届试题</h4>
-                <p class="mbr-text mbr-fonts-style display-7"></p>
-            </div>    
-        </div>
-</div></section>
-
-<section class="features4 cid-qN6p18h3kJ" id="features4-1p">
-    
-         
-
-    
-    <div class="container">
-        <div class="media-container-row">
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper media-container-row media-container-row">
-                    <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">张同学 北京外国语大学</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            “我现在回国就职于一家法国的独立广告代理商Fred &amp; Farid。虽然广告与翻译属于不同行业，但一年多前参加比赛所积累下的在项目管理、时间掌控和多职能部门协调分工方面的经验毫无障碍地转化到了我现在的工作中。现在回想起来，那次比赛就像是我踏入职业路程前的trial run一样！”<br><br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper media-container-row">
-                    <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">张同学 北京外国语大学</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            “我如今在北京市公安局天安门地区分局工作，经常遇到外事活动可以发挥专业所长。参加CAT大赛已经两年了，当年和队友们熬夜讨论推敲的场面还历历在目，这次经历不止开阔了眼界，增长了知识，最重要的是认识了一批志同道合的优秀小伙伴们。在一起天下第一，分开后各自牛逼，愿我们可以不被生活打败，永葆激情！”
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper media-container-row">
-                    <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">张同学 北京外国语大学</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            “参加CAT大赛，让我认识了一生中最宝贵的朋友，并为我打开一扇大门，让学习人力资源管理的我可以有机会更亲近语言与技术，从而能有机会去BAT公司做海外产品的PM Intern，在实习工作中，我更加发现了互联网产品与技术传播之间的微妙关系，现在想起比赛的那段经历，也觉得颇为有趣”
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            
-        </div>
-    </div>
-</section>
-
-<section class="features4 cid-qN6pdJgmBG" id="features4-1q">
-    
-         
-
-    
-    <div class="container">
-        <div class="media-container-row">
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper media-container-row media-container-row">
-                    <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">张同学 北京外国语大学</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            “毕业之后我加入了迪拜国际纯血马实习项目。目前在英国接受专业的课程培训和领导力技能培养。CAT比赛那会专业课和社团都忙得不可开交，而我当时的团队却仍幸运的取得了好成绩。值得感谢的是大学期间接受的专业CAT课程培训和在MOOC上的自学内容，帮助很大。通过比赛也锻炼了自己时间管理和项目策划的能力，还收获了许多志同道合的好伙伴们。”
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper media-container-row">
-                    <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">张同学 北京外国语大学</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            “CAT大赛让我发现了技术传播这个新世界，很高兴现在的我仍然在这个新世界中探索。”
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper media-container-row">
-                    <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">张同学 北京外国语大学</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            “很有幸能参加第三届计算机辅助翻译与技术传播大赛。这次比赛不仅让我结交了新朋友，收获了友谊，还为我开启了技术写作的大门。希望有更多的童鞋来参加比赛～祝愿比赛越办越好！”
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            
-        </div>
-    </div>
-</section>
-
-<section class="timeline1 cid-qN2NvoYLZ9" id="timeline1-1b">
-
-    
-
-    
-
-    <div class="container align-center">
-        <h2 class="mbr-section-title pb-3 mbr-fonts-style display-2">
-            大赛日程</h2>
-        <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-7">本次大赛分初赛和决赛两部分，入围决赛名单会及时公布，敬请关注大赛网站！</h3>
-
-        <div class="container timelines-container" mbri-timelines="">
-            <div class="row timeline-element reverse separline">      
-                 <div class="timeline-date-panel col-xs-12 col-md-6  align-left">         
-                    <div class="time-line-date-content">
-                        <p class="mbr-timeline-date mbr-fonts-style display-5">2018.3.30-4.20</p>
-                    </div>
-                </div>
-           <span class="iconBackground"></span>
-            <div class="col-xs-12 col-md-6 align-right">
-                <div class="timeline-text-content">
-                    <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">初赛</h4>
-                    <p class="mbr-timeline-text mbr-fonts-style display-7">翻译类：英汉互译：英译汉、汉译英短文各一篇<br>技术传播类：寻求某个技术传播案例的解决方案，形式不限。&nbsp;<br></p>
-                 </div>
-            </div>
-            </div>
-
-            <div class="row timeline-element  separline">
-                <div class="timeline-date-panel col-xs-12 col-md-6 align-right">
-                    <div class="time-line-date-content">
-                        <p class="mbr-timeline-date mbr-fonts-style display-5">2018.5.1-6.2</p>
-                    </div>
-                </div>
-                <span class="iconBackground"></span>
-                <div class="col-xs-12 col-md-6 align-left ">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">决赛准备</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7">线上培训：通过初赛的同学们，可以获得组委会提供的相关培训，培训内容与决赛相关，浓缩了北大CAT专业多年教学实践中总结出的宝贵经验。</p>
-                    </div>
-                </div>
-            </div> 
-
-
-            <div class="row timeline-element reverse">
-                <div class="timeline-date-panel col-xs-12 col-md-6  align-left">
-                    <div class="time-line-date-content">
-                        <p class="mbr-timeline-date mbr-fonts-style display-5">
-                            2018.6.3</p>
-                    </div>
-                </div>
-                <span class="iconBackground"></span>
-                <div class="col-xs-12 col-md-6 align-right">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
-                            决赛</h4>      
-                        <p class="mbr-timeline-text mbr-fonts-style display-7">决赛地点及具体事宜另行通知</p>
-                    </div>
-                </div>
-            </div>
-
-            
-
-
-            
-
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section content8 cid-qN4KJkgEoi" id="content8-1j">
-
-    
-
-    <div class="container">
-        <div class="media-container-row title">
-            <div class="col-12 col-md-8">
-                <div class="mbr-section-btn align-center"><a class="btn btn-secondary display-4" href="http://cattc-contest.com/fanyi" target="_blank"><span class="mbri-paper-plane mbr-iconfont mbr-iconfont-btn"></span>报名参赛</a></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="cid-qN0878QZUK" id="footer1-g">
-
-    
-
-    
-
-    <div class="container">
-        <div class="media-container-row content text-white">
-            <div class="col-12 col-md-3">
-                <div class="media-wrap">
-                    
-                        <img src="assets/images/2-564x191.png" alt="Mobirise" title="">
-                    
-                </div>
-            </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <h5 class="pb-3"></h5>
-                <p class="mbr-text"></p>
-            </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <h5 class="pb-3">主办单位</h5>
-                <p class="mbr-text">中国标准化协会技术传播服务委员会 <br>中国翻译协会本地化服务委员会 <br>北京大学软件与微电子学院</p>
-            </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <h5 class="pb-3">承办单位</h5>
-                <p class="mbr-text">北京大学翻译协会<br>北京大学技术传播协会<br></p>
-            </div>
-        </div>
-        <div class="footer-lower">
-            <div class="media-container-row">
-                <div class="col-sm-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="media-container-row mbr-white">
-                <div class="col-sm-6 copyright">
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        © Copyright 2018 CATTC大赛组委会 - ALL RIGHTS RESERVED</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="social-list align-right">
-                        <div class="soc-item">
-                            <a href="https://weibo.com/pkuati" target="_blank">
-                                <span class="mbr-iconfont mbr-iconfont-social socicon-weibo socicon"></span>
-                            </a>
-                        </div>
-                        
-                        
-                        
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/dropdown/js/script.min.js"></script>
-  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  
-  
-</body>
-</html>

@@ -1,0 +1,16 @@
+markdown: kramdown
+permalink: /:title/
+url: 
+name: PKU CAT
+author: 
+qq: 
+email: 
+duoshuo:
+beian: 
+51la: 
+weibo: 
+github: pkucaters
+pygments: 
+safe: true
+paginate: 20
+about: "在Github上的Blog。"
