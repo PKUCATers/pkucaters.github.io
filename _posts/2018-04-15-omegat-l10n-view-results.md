@@ -22,7 +22,7 @@ tags:
 
 ### 1、克隆仓库
 
-`git clone ssh://git@127.0.0.1:43999/home/git/web`
+`git clone ssh://git@cattc-contest.com:43999/home/git/web`
 
 输入密码后完成操作。
 
