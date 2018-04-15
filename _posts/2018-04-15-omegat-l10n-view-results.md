@@ -1,5 +1,5 @@
 ---
-date: 2018-04-03 17:30:17+00:00
+date: 2018-04-15 22:05:17+00:00
 layout: post
 title: 查看本地化后的Omegat网站、文档和UI
 categories: 本地化
