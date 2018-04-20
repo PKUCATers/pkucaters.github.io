@@ -21,7 +21,7 @@ tags:
 
 ## 2. 快捷键的翻译
 
-英文需要大写，这样的不对。显示效果也比较难看，大小写不统一。
+英文需要大写，这样的不对。显示效果也比较难看，大小写不统一。另外还存在快捷键被漏去的情况。
  
 ![](https://github.com/pkucaters/pkucaters.github.io/raw/master/album/omegat/accesskey1.png)
 
