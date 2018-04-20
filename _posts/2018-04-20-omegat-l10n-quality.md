@@ -1,5 +1,5 @@
 ---
-date: 2018-04-15 22:05:17+00:00
+date: 2018-04-20 11:17:17+00:00
 layout: post
 title: Omegat本地化项目的翻译质量问题
 categories: 本地化
