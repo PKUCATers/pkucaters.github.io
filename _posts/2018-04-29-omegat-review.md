@@ -24,7 +24,7 @@ xulihang
 Bundle.properties
 ```
 
-把结果按每人对应的片段，可以再分出31个文件，即把每个人负责的片段都整个到一个文本文件里。依次提交commit并传到github上。然后我们可以查看每个文件的commit，并进行评论。这就相当于对某位同学的翻译进行审校。
+把结果按每人对应的片段，可以再分出31个文件，即把每个人负责的片段都整个到一个文本文件里。依次提交commit并传到github上。然后我们可以查看每个文件的commit。在有错误的行的左边点击“+”，可以进行评论。这就相当于对某位同学的翻译进行审校。
 
 ![](https://github.com/pkucaters/pkucaters.github.io/raw/master/album/omegat/review-commit.JPG)
 
