@@ -24,9 +24,11 @@ xulihang
 Bundle.properties
 ```
 
-把结果按每人对应的片段，可以再分出31个文件，即把每个人负责的片段都整个到一个文本文件里。依次提交commit并传到github上。然后我们可以查看每个文件的commit。在有错误的行的左边点击“+”，可以进行评论。这就相当于对某位同学的翻译进行审校。
+把结果按每人对应的片段，可以再分出31个文件，即把每个人负责的片段都整个到一个文本文件里。依次提交commit并传到github上。然后我们访问[这里](https://github.com/PKUCATers/omegat-review/commits/master)，可以查看每个文件的commit。在有错误的行的左边点击“+”，可以进行评论。
 
 ![](https://github.com/pkucaters/pkucaters.github.io/raw/master/album/omegat/review-commit.JPG)
+
+评论就相当于对某位同学的翻译进行审校。
 
 ![](https://github.com/pkucaters/pkucaters.github.io/raw/master/album/omegat/review-comment.JPG)
 
@@ -37,4 +39,6 @@ Bundle.properties
 具体分工见[表格](http://pkucaters.github.io/assets/审校分工.xlsx)。
 
 另外还有之前的[完整分工表](http://pkucaters.github.io/assets/分工new.xlsx)
+
+另外，如果对原来的翻译有重要的修改，比如术语翻译变化，可以在此做记录：[https://github.com/PKUCATers/omegat-review/blob/master/bigchanges.rst](https://github.com/PKUCATers/omegat-review/blob/master/bigchanges.rst)。可以个人账户fork后发pull request或者申请加入cat的组织获得修改权限。
 
