@@ -11,7 +11,7 @@ tags:
 | 名称        | 网址                             | 简介    | 分类  |
 | --------- | ------------------------------ | ----- | --- |
 | SDL       | <https://www.sdl-china.cn/cn/> |       | CAT |
-| Dejavu    | <https://www.sdl-china.cn/cn/> |       | CAT |
+| Dejavu    | <https://www.atril.com/>       |       | CAT |
 | Memoq     | <https://www.memoq.com/>       |       | CAT |
 | OmegaT    | <https://www.omegat.org/>      | 开源    | CAT |
 | Memsource | <https://www.memsource.com/>   | 在线CAT | CAT |
