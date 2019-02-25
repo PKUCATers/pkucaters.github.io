@@ -2,7 +2,7 @@
 date: 2019-02-25 12:36:17+00:00
 layout: post
 title: 翻译工具收集
-categories: 本地化
+categories: CAT
 tags: 
 ---
 
