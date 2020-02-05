@@ -68,3 +68,4 @@ tags:
 
 * [Word文档中禁止目录、时间、参考文献等域的自动更新](https://www.jianshu.com/p/a51872411ca4)
 * [Word中批量更新域的两个小方法](https://blog.csdn.net/silencemaster/article/details/80714333)
+* [论文写作心得-格式与自动化工具使用篇](http://blog.xulihang.me/bachelor-degree-paper-notes-office-automation/)
