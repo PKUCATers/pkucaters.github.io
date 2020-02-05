@@ -60,9 +60,9 @@ tags:
 
 下载：
 
-修改后的模板：[模板.doc](https://github.com/PKUCATers/graduation-guide/raw/master/相关文件/模板.doc)
+修改后的模板：[模板.doc](/download/模板.doc)
 
-修改后的EndNote用国家标准参考文献样式：[geebinf modified by zz.ens](https://github.com/PKUCATers/graduation-guide/raw/master/相关文件/geebinf%20modified%20by%20zz.ens)
+修改后的EndNote用国家标准参考文献样式：[geebinf modified by zz.ens](/download/geebinf%20modified%20by%20zz.ens)
 
 参考资料
 
