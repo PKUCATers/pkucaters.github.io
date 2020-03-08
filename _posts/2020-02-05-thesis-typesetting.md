@@ -49,7 +49,7 @@ tags:
 	
 	我个人倾向于使用顺序编码。
 	
-	可以使用EndNote管理文献，网上有一份国家标准的参考文献样式可以使用：<https://cnzhx.net/blog/endnote-output-style-cnzhx/>
+	可以使用EndNote管理文献，网上有一份国家标准的参考文献样式可以使用：<https://cnzhx.net/blog/endnote-output-style-cnzhx/>。注意中文三个以上作者需要把et al改成等，然后最后参考文献列表的编号是纯文本，不是用的Word中的编号，会有对齐问题，最好把文字编号删了然后用Word的编号功能重新进行编号。
 	
 	
 
