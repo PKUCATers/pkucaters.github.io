@@ -69,6 +69,12 @@ tags:
 	搜索：([a-zA-Z]) ([a-zA-Z])
     替换：\1PLACEHOLDER\2
 	```
+	
+7. 脚注
+
+	注意脚注的横线分隔符的缩进。具体修改方法参见：[Word 2010如何修改脚注上方的横线?](http://www.360doc.com/content/18/0412/02/9360021_744894414.shtml)
+
+	![](/album/thesis/footnote.png)
 
 注意事项：
 
