@@ -76,6 +76,11 @@ tags:
 
 	![](/album/thesis/footnote.png)
 
+8. 版权声明与原创性声明页
+
+	版权声明与原创性声明页使用北大系统上下载的PDF。将Word导出为PDF后再用Adobe Acrobat等PDF编辑软件替换页面。
+	
+	
 注意事项：
 
 1. 新的章节应该出现在奇数页
