@@ -95,7 +95,12 @@ tags:
 
 修改后的EndNote用国家标准参考文献样式：[geebinf modified by zz.ens](/download/geebinf%20modified%20by%20zz.ens)
 
-参考资料
+相关：
+
+[使用Git管理Word格式的论文](/use-git-with-thesis-in-word-format/)
+
+
+参考资料：
 
 * [Word文档中禁止目录、时间、参考文献等域的自动更新](https://www.jianshu.com/p/a51872411ca4)
 * [Word中批量更新域的两个小方法](https://blog.csdn.net/silencemaster/article/details/80714333)
