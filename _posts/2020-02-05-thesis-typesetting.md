@@ -97,7 +97,7 @@ tags:
 
 相关：
 
-[使用Git管理Word格式的论文](/use-git-with-thesis-in-word-format/)
+[使用Git管理Word格式的论文](https://blog.xulihang.me/use-git-with-thesis-in-word-format/)
 
 
 参考资料：
